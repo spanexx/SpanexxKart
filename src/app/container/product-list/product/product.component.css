@@ -1,0 +1,97 @@
+
+.card-container {
+  background: #ff0000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Sale card styling */
+.sale-card {
+  background-color: white;
+  width: calc(33.33% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.sale-card:hover {
+  transform: scale(1.05);
+}
+
+.ekart-product-image {
+  width: 70%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-left: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.ekart-product-image:hover {
+  transform: rotate(15deg);
+  filter: grayscale(0%);
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ff0000;
+  /* Adjust the color as needed */
+  cursor: pointer;
+}
+
+.product-details {
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  /* Ensure padding is included in the width */
+}
+
+.ekart-product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ekart-product-category,
+.ekart-product-available-colors {
+  color: #666;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.ekart-inventory-status {
+  margin-bottom: 10px;
+}
+
+/* Activate the color box */
+.ekart-color-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+}
+
+.disable-out-of-stock-product {
+  background-color: #282828;
+  opacity: 0.5;
+}
+
+.highlight-product {
+  -webkit-box-shadow: 0 0 1px 3px #000 inset;
+  -moz-box-shadow: 0 0 1px 3px #000 inset;
+  border: #efefef 2px solid;
+  box-shadow: 10px 10px 18px #cccccc;
+  transform: scale(1.05);
+}

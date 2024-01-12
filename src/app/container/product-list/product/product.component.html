@@ -1,0 +1,22 @@
+<!-- product component -->
+<div class="card-container">
+    <!-- Sale Card -->
+    <div class="sale-card" appSetHighlights>
+      <img [src]='product.imageUrl' class="ekart-product-image" alt="Product Image">
+      <i class="far fa-heart wishlist-icon"></i>
+  
+      <div class="product-details">
+        <h3 class="ekart-product-name">{{ product.name }}</h3>
+        <p class="ekart-product-category">{{ product.gender }} - {{ product.category }} - {{ product.brand }}</p>
+        <p class="ekart-product-available-colors">{{ product.colors.length }} Colors - Best Seller</p>
+        <div class="ekart-inventory-status">
+            {{ product.isInInventory ? 'Available' : 'Not In Stock'}}
+          </div>
+      </div>
+  
+      
+      <div class="ekart-color-box" *ngIf="isHovered(product.colors) && product.isInInventory">
+        <div *ngFor="let color of product.colors" class="color-box" [style.background-color]="color"></div>
+      </div>
+    </div>
+  </div>

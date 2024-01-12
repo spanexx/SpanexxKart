@@ -1,0 +1,5 @@
+<!-- top-menu.component.html -->
+<div class="top-menu">
+    <a *ngFor="let menuItem of menuItems" [routerLink]="menuItem.route">{{ menuItem.label }}</a>
+  </div>
+  

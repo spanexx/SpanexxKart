@@ -1,0 +1,19 @@
+
+
+<!-- Add another card within the same .card-container -->
+<div class="card-container">
+    <div *ngFor="let anotherProduct of products" class="sale-card" appSetHighlights>
+    <img [src]="anotherProduct.imageUrl" class="ekart-product-image" alt="Product Image">
+    <i class="far fa-heart wishlist-icon"></i>
+    <div class="product-details">
+        <h3 class="ekart-product-name">{{ anotherProduct.name }}</h3>
+        <p class="ekart-product-category">{{ anotherProduct.gender }} - {{ anotherProduct.category }} - {{ anotherProduct.brand }}</p>
+        <p class="ekart-product-available-colors">{{ anotherProduct.colors.length }} Colors - Best Seller</p>
+        <div class="ekart-inventory-status">
+          {{ anotherProduct.isInInventory ? 'Available' : 'Not In Stock'}}
+        </div>
+      </div>
+    
+</div>
+
+

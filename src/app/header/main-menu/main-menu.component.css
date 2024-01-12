@@ -1,0 +1,39 @@
+/* main-menu.component.css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #3498db; /* Change to your preferred background color */
+
+}
+
+.logo {
+  padding: none;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+}
+
+#navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+#navbar-links a {
+  text-decoration: none;
+  color: #fff; /* Change to your preferred text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  transition: color 0.3s ease; /* Add transition for a smooth color change effect */
+
+}
+
+#navbar-links a:hover {
+  color: #ffd700; /* Change to your preferred hover color */
+}

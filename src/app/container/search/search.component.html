@@ -1,0 +1,10 @@
+<!-- search.component.html -->
+<div class="search-product">
+    <input class="search-product-input" #keyin>
+    <button class="search--btn" (click)="updateSearchText()">
+        Search
+      </button>
+</div>
+
+<div class="search-result" *ngIf="searchText != '' ">
+  <p><strong>Search result for: </strong>{{searchText}}</p></div>

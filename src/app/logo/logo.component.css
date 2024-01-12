@@ -1,0 +1,66 @@
+/* logo.component.css */
+
+.navbar-brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Concert One', cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #6fb4ff;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+h3:hover {
+  color: #1a1a1a;
+}
+
+/* Additional Styles for a more logo-like appearance */
+h3::before {
+  content: '👜'; /* Add your desired logo icon or symbol */
+  margin-left: 12px;
+  font-size: 40px;
+  color: #3895f9;
+}
+
+h3::after {
+  content: '';
+  font-weight: 300;
+  font-size: 28px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+
+  h3::before {
+    font-size: 32px;
+    margin-left: 8px;
+  }
+
+  h3::after {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+   
+  }
+
+  h3::before {
+    font-size: 28px;
+    margin-left: 4px;
+  }
+
+  h3::after {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+.ekart--top-header {
+    height: auto; /* Change to auto for responsive height */
+    background-color: rgb(2, 2, 58);
+    text-align: center;
+    color: aliceblue;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.ekart--top-header p {
+    margin: 0;
+    animation: slideUp 3s infinite;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .ekart--top-header {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ekart--top-header {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

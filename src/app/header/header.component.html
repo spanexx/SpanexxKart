@@ -1,0 +1,29 @@
+<!-- header.component.html -->
+
+<nav>
+  <div class="top-menu">
+    <a *ngFor="let menuItem of TopmenuItems" [routerLink]="menuItem.route">{{ menuItem.label }}</a>
+  </div>
+  
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+ <label class="logo" [routerLink]="['/home']">SpaneXxKart</label>
+
+
+    <ul>
+      <li><a  *ngFor="let menuItem of menuItems" [routerLink]="menuItem.route">{{ menuItem.label }}</a></li>
+    </ul>
+
+  </nav>
+
+
+
+
+
+
+
+
+
+
